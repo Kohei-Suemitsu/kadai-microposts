@@ -16,6 +16,7 @@
                <div>
                    <p><%= micropost.content %></p>
                </div>
+               <%= render 'favorites/love_button', micropost: micropost %>
 	       </li>
 	   <% end %> 
 	</ul>
