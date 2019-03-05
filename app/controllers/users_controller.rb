@@ -41,7 +41,8 @@ class UsersController < ApplicationController
   end
   
   def likes
-    @microposts = current_user.lovings
+    @user = User.find(params[:id])
+    @microposts = @user.lovings
   end 
   
   private
